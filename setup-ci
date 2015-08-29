@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+log() {
+	echo "> $@"
+	"$@"
+}
+
+log cp ./src/test/resources/application.conf.dist ./src/test/resources/application.conf
+log ./dist/setup
